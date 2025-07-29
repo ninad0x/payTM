@@ -134,11 +134,11 @@ router.get("/bulk", async (req, res) => {
    
     const filter = req.query.filter || "";
 
-    if (!filter) {
-        return res.json({
-            message: "filter required"
-        })
-    }
+    // if (!filter) {
+    //     return res.json({
+    //         message: "filter required"
+    //     })
+    // }
 
     try {
         const users = await User.find({
